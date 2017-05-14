@@ -30,5 +30,14 @@ namespace helloworld
                 // Update the view, if already loaded.
             }
         }
-    }
+
+        /// <summary>
+        /// Ons the click button.
+        /// </summary>
+        /// <param name="sender">Sender.</param>
+		partial void OnClickButton(Foundation.NSObject sender)
+        {
+            _mLabel.StringValue = "ボタン押したょ！";
+        }
+	}
 }
