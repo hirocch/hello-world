@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -684,21 +683,21 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D7h-iw-JIs">
-                                <rect key="frame" x="14" y="199" width="81" height="32"/>
+                                <rect key="frame" x="14" y="199" width="115" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="U94-5R-VBQ">
+                                <buttonCell key="cell" type="push" title="Hello Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="U94-5R-VBQ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="OnClickButton:" target="XfG-lQ-9wD" id="WnI-Bi-Bmb"/>
+                                    <action selector="OnClickHelloButton:" target="XfG-lQ-9wD" id="WnI-Bi-Bmb"/>
                                 </connections>
                             </button>
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="_mButton" destination="D7h-iw-JIs" id="f1z-Ne-dVc"/>
-                        <outlet property="_mLabel" destination="T2X-3h-jhT" id="v2r-BG-t3p"/>
+                        <outlet property="HelloButton" destination="D7h-iw-JIs" id="f1z-Ne-dVc"/>
+                        <outlet property="HelloLabel" destination="T2X-3h-jhT" id="v2r-BG-t3p"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

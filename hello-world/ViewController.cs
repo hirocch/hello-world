@@ -46,12 +46,12 @@ namespace helloworld
         }
 
         /// <summary>
-        /// Ons the click button.
+        /// Ons the click hello button.
         /// </summary>
         /// <param name="sender">Sender.</param>
-		partial void OnClickButton(Foundation.NSObject sender)
+		partial void OnClickHelloButton(Foundation.NSObject sender)
         {
-            _mLabel.StringValue = "ボタン押したょ！";
+            HelloLabel.StringValue = "ボタン押したょ！";
         }
 	}
 }

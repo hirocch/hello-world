@@ -13,24 +13,24 @@ namespace helloworld
 	partial class ViewController
 	{
 		[Outlet]
-		AppKit.NSButton _mButton { get; set; }
+        AppKit.NSButton HelloButton { get; set; }
 
 		[Outlet]
-		AppKit.NSTextField _mLabel { get; set; }
+		AppKit.NSTextField HelloLabel { get; set; }
 
-		[Action ("OnClickButton:")]
-		partial void OnClickButton (Foundation.NSObject sender);
+		[Action ("OnClickHelloButton:")]
+		partial void OnClickHelloButton (Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (_mButton != null) {
-				_mButton.Dispose ();
-				_mButton = null;
+			if (HelloButton != null) {
+				HelloButton.Dispose ();
+				HelloButton = null;
 			}
 
-			if (_mLabel != null) {
-				_mLabel.Dispose ();
-				_mLabel = null;
+			if (HelloLabel != null) {
+				HelloLabel.Dispose ();
+				HelloLabel = null;
 			}
 		}
 	}
